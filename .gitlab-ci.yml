@@ -1,0 +1,17 @@
+image: google/cloud-sdk:alpine
+
+before_script:
+  - rm -rf $HOME/.gcp
+  - mkdir -p $HOME/.gcp
+  - echo $SERVICE_ACCOUNT | base64 -d > $HOME/.gcp/zensoftware-service-account.json
+
+stages:
+  - UnitTest
+    
+testing:
+  image: node:latest
+  stage: UnitTest
+  script:
+    - cd ./source
+    - npm install
+    - npm test
