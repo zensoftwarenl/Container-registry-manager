@@ -1,19 +1,29 @@
-# Zensoftware Container Registry Manager
+# ZEN software Container Registry Manager
 
-Welcome to Zensoftware Container Registry Manager, a powerful open-source tool designed to simplify and enhance the management of Docker images within Google Cloud Platform's Container Registry.
+Welcome to ZEN software Container Registry Manager, a powerful open-source tool designed to simplify and enhance the management of Docker images within Google Cloud Platform's Container Registry.
 
 Our project aims to address the challenge of automating the management of the GCR container registry. It does this by providing a comprehensive solution for identifying and cleaning up old, unused Docker images, ensuring optimal storage utilization and a reduction in storage costs.
 
 # Key Features
 
-1. Automated Cleanup: Zensoftware Container Registry Manager automates the process of identifying and removing outdated Docker images, freeing up valuable storage space in your GCP Container Registry. This automation helps maintain a lean and efficient image repository.
+1. Automated Cleanup: ZEN software Container Registry Manager automates the process of identifying and removing outdated Docker images, freeing up valuable storage space in your GCP Container Registry. This automation helps maintain a lean and efficient image repository.
+
+   ![storage savings](/screenshots/before_after.jpg)
 
 2. Customizable Policies: Tailor the cleanup process to suit your specific requirements with customizable policies. Define criteria such as image age, tag patterns, and usage frequency to ensure that only the images you no longer need are removed, preserving critical resources.
 
-3. Idempotent Operations: Experience the reliability of idempotent operations with Zensoftware Container Registry Manager. Whether you run the cleanup process once or a thousand times, the result remains consistent. This ensures predictability and stability in your containerized environment.
+3. Idempotent Operations: Experience the reliability of idempotent operations with ZEN software Container Registry Manager. Whether you run the cleanup process once or a thousand times, the result remains consistent. This ensures predictability and stability in your containerized environment.
 
-# Setup
-To setup the Container manager, there are 2 main options. Either use Terraform to manage the infrastructure or you can manually setup the container manager
+   ![idempotent](/screenshots/idempotent.jpg)
+
+   ![partial deletes](/screenshots/containers_tags.jpg)
+
+4. 100% Test Coverage: Rest assured in the robustness of Zensoftware Container Registry Manager's codebase. We take pride in achieving 100% test coverage, guaranteeing that each line of code is rigorously tested, contributing to a more reliable and resilient tool.
+
+   ![test coverage](/screenshots/tests.jpg)
+
+# Set up
+To set up the Container manager, there are 2 main options. Either use Terraform to manage the infrastructure or you can manually setup the container manager
 
 ## Terraform
 
