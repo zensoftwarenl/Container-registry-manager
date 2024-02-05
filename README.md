@@ -71,4 +71,15 @@ The manual installation will be more 'hands on' as you will need to complete som
 12. You should now see the scheduler job in the list. <br> (If you wish to run it click the dots on the end of the line, and click "force run" ) 
 13. That's it! You have deployed the container manager 
 
-After following these steps you should have the container manager running and should see the size of your container registry shrink after completing the first run, 
+After following these steps you should have the container manager running and should see the size of your container registry shrink after completing the first run.
+
+### Here is how it looks in Cloud Functions
+![result in Cloud Functions](/screenshots/final_function.jpg)
+
+
+### Here is how it looks in Cloud Run
+
+Do note the "Deployed by" field stating its deployed by a cloud function. This is because we use Gen 2 functions which are basically just cloud run containers. 
+
+![result in Cloud Run](/screenshots/final_cloud_run.jpg)
+
